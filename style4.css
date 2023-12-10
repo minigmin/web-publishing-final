@@ -1,0 +1,489 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+:root {
+  --main-color: #8f2020;
+  --main-color-light: rgba(143, 32, 32, 0.75);
+  --accent-color: #e4ab17;
+  --black: #333333;
+  --grey: #595959;
+  --white: #f9f9f9;
+  --dark: #111111;
+  --dark-overlay: rgba(17, 17, 17, 0.8);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
+  letter-spacing: -0.011rem;
+}
+body {
+  background-color: var(--white);
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  height: 47.8125rem;
+  margin-bottom: 7.5rem;
+}
+.title {
+  display: flex;
+  width: 75rem;
+  margin: auto;
+}
+.title .logo {
+  width: 17.626rem;
+  height: 5.625rem;
+  padding: 1.6875rem 1.25rem 0.3125rem 1.25rem;
+  background-image: url(./이미지/Let’s\ Travel.svg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.headbar {
+  width: 57.375rem;
+  height: 3.75rem;
+}
+.subbar {
+  background-color: var(--white);
+  width: 57.375rem;
+  height: 1.875rem;
+}
+.subbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.subbar a {
+  display: block;
+  padding: 0.5313rem 0.625rem;
+  color: var(--black);
+  text-decoration: none;
+  font-size: 0.6875rem;
+  font-weight: 400;
+}
+.navbar {
+  background-color: var(--main-color);
+  width: 57.375rem;
+  height: 3.75rem;
+  border-top-right-radius: 1.5625rem;
+  border-top-left-radius: 1.5625rem;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+.navbar a {
+  display: block;
+  padding: 1.2813rem 3.125rem;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background-color: var(--accent-color);
+}
+.heroimage {
+  background-image: url(./이미지/메인배너\ 서울불꽃축제.jpg);
+  width: 100%;
+  min-width: 75rem;
+  height: 42.1875rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.heroimage .subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  position: absolute;
+  top: 15rem;
+  left: 55vw;
+  text-align: right;
+}
+.heroimage .subtitle h1:nth-child(1) {
+  color: var(--white);
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 0rem 0.25rem 0.25rem var(--dark);
+}
+.heroimage .subtitle h1:nth-child(2) {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0rem 0.25rem 0.25rem var(--dark);
+}
+.heroimage .subtitle p {
+  color: var(--white);
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-shadow: 0rem 0.25rem 0.25rem var(--dark);
+}
+.conA {
+  width: 75rem;
+  margin: auto;
+  margin-bottom: 7.5rem;
+}
+.conA h2 {
+  color: var(--black);
+  font-size: 2.25rem;
+  font-weight: 600;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.conA h2::before {
+  content: "";
+  flex-grow: 1;
+  background: var(--black);
+  height: 0.1875rem;
+  font-size: 0rem;
+  line-height: 0rem;
+  margin-right: 3.125rem;
+}
+.conA h2::after {
+  content: "";
+  flex-grow: 1;
+  background: var(--black);
+  height: 0.1875rem;
+  font-size: 0rem;
+  line-height: 0rem;
+  margin-left: 3.125rem;
+}
+.conA .containerA {
+  width: 75rem;
+  height: 28.125rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 6.25rem;
+}
+.conA .containerA .photo1 {
+  background-image: url(./이미지/롯데월드.jpg);
+  width: 42.5rem;
+  height: 28.125rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3.125rem;
+}
+.conA .containerA .photo2 {
+  background-image: url(./이미지/관악별빛산책.jpg);
+  width: 42.5rem;
+  height: 28.125rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3.125rem;
+}
+.conA .containerA .photo3 {
+  background-image: url(./이미지/석촌루미나리에.jpg);
+  width: 42.5rem;
+  height: 28.125rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3.125rem;
+}
+.conA .containerA .text {
+  padding-top: 7.6875rem;
+  width: 26.25rem;
+}
+.conA .containerA .text h3:nth-child(1) {
+  color: var(--main-color);
+  font-size: 2.25rem;
+  font-family: 700;
+}
+.conA .containerA .text h3:nth-child(2) {
+  color: var(--black);
+  font-size: 1.3125rem;
+  font-weight: 500;
+  margin-top: 1.875rem;
+  line-height: 1.75rem;
+}
+.conA .containerA .text p {
+  color: var(--grey);
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-top: 1.875rem;
+  text-align: justify;
+}
+.conB {
+  width: 75rem;
+  margin: auto;
+  margin-bottom: 12.5rem;
+}
+.conB h2 {
+  color: var(--black);
+  font-size: 2.25rem;
+  font-weight: 600;
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+}
+.conB h2::after {
+  content: "";
+  flex-grow: 1;
+  background: var(--black);
+  height: 0.1875rem;
+  font-size: 0rem;
+  line-height: 0rem;
+  margin-left: 3.125rem;
+}
+.conB .search-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 3.125rem;
+  margin-top: 3.75rem;
+}
+.conB .search input {
+  width: 18.125rem;
+  height: 3.75rem;
+  background-color: var(--white);
+  padding: 1rem 2.5rem;
+  font-size: 1.3125rem;
+  border-radius: 0.625rem;
+  border: 3px solid var(--black);
+  outline: 0;
+}
+.conB .search input::placeholder {
+  color: var(--black);
+  font-size: 1.3125rem;
+  font-weight: 500;
+}
+.conB .search-bar .button {
+  background-color: var(--main-color);
+  color: var(--white);
+  width: 11.25rem;
+  height: 3.75rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.375rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 0.625rem;
+  border: none;
+}
+.conB .search-bar .button img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.conB .search .button:hover {
+  background-color: var(--accent-color);
+}
+.conB .containerB {
+  width: 75rem;
+  height: 58.125rem;
+  margin-top: 3.75rem;
+  display: grid;
+  grid-template-rows: repeat(3, 18.75rem);
+  grid-template-columns: repeat(3, 24.375rem);
+  gap: 0.9375rem;
+  justify-content: center;
+  align-content: center;
+}
+.conB .containerB .textbox {
+  background-color: var(--dark-overlay);
+  width: 24.375rem;
+  height: 5rem;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+  position: absolute;
+  top: 13.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  justify-content: center;
+  padding-left: 1.25rem;
+  outline: none;
+}
+.conB .containerB .textbox h3 {
+  color: var(--white);
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+.conB .containerB .textbox p {
+  color: var(--white);
+  font-size: 0.6875rem;
+  font-weight: 300;
+  line-height: 1rem;
+}
+.conB .containerB a:hover {
+  filter: brightness(50%);
+}
+.conB .containerB .item1 {
+  background-image: url(./이미지/해운대\ 빛축제.jpg);
+  width: 24.375rem;
+  height: 18.75rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.625rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.conB .containerB .item2 {
+  background-image: url(./이미지/축제-서창별빛거리_\(1\).jpg);
+  width: 24.375rem;
+  height: 18.75rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.625rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.conB .containerB .item3 {
+  background-image: url(./이미지/아침고요수목원.jpg);
+  width: 24.375rem;
+  height: 18.75rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.625rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.conB .containerB .item4 {
+  background-image: url(./이미지/양평빙송어축제.jpg);
+  width: 24.375rem;
+  height: 18.75rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.625rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.conB .containerB .item5 {
+  background-image: url(./이미지/관악별빛산책.jpg);
+  width: 24.375rem;
+  height: 18.75rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.625rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.conB .containerB .item6 {
+  background-image: url(./이미지/롯데월드.jpg);
+  width: 24.375rem;
+  height: 18.75rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.625rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.conB .containerB .item7 {
+  background-image: url(./이미지/석촌루미나리에.jpg);
+  width: 24.375rem;
+  height: 18.75rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.625rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.conB .containerB .item8 {
+  background-image: url(./이미지/낭만\ 등불축제.jpg);
+  width: 24.375rem;
+  height: 18.75rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.625rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.conB .containerB .item9 {
+  background-image: url(./이미지/청도프로방스.jpg);
+  width: 24.375rem;
+  height: 18.75rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.625rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.footbar {
+  width: 75rem;
+  height: 17.125rem;
+  background-color: var(--main-color);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3.125rem 9.375rem;
+  border-top-right-radius: 3.125rem;
+  border-top-left-radius: 3.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5625rem;
+}
+.footbar .foot {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5625rem;
+  color: var(--white);
+  font-size: 1rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.footbar .foot b {
+  font-weight: 500;
+}
+.footbar .foot a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--white);
+}
+.footbar .foot h4 {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  background-color: var(--accent-color);
+  padding: 0.75rem 2.625rem 0.75rem 1.25rem;
+  border-bottom-left-radius: 1.25rem;
+  border-top-left-radius: 1.25rem;
+}
+.footbar .foot .footnav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3.125rem;
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 1.25rem;
+  padding: 0.75rem 3.5625rem 0.75rem 3.625rem;
+  position: absolute;
+  left: 10.1875rem;
+}
+.footbar .foot .footnav p {
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
