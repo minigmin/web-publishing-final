@@ -13,7 +13,7 @@
   --forest: #1fbf4c;
   --histroy: #bd713a;
 }
-@media (max-width: 393px) {
+@media (max-width: 430px) {
   * {
     margin: 0;
     padding: 0;
@@ -23,6 +23,7 @@
       "Noto Sans KR", "Malgun Gothic", sans-serif;
     letter-spacing: -0.011rem;
   }
+
   body {
     background-color: var(--white);
   }
@@ -31,13 +32,16 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   header {
+    width: 26.875rem;
     height: 21.5625rem;
   }
   .title {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
   .headbar {
     width: 18.3125rem;
@@ -100,7 +104,7 @@
     background-color: var(--accent-color);
   }
   .heroimage {
-    width: 24.5625rem;
+    width: 100vw;
     height: 17.8125rem;
     background-image: url(./이미지/메인페이지\ 메인이미지.jpg);
     background-position: center;
@@ -131,39 +135,39 @@
   }
   .conA {
     margin: auto;
-    width: 24.5625rem;
+    width: 100vw;
     margin-bottom: 3.75rem;
   }
   .conA .containerA {
-    width: 24.5625rem;
+    width: 100vw;
     height: 15.9375rem;
     position: relative;
     top: 0;
     left: 0;
   }
   .conA .containerB {
-    width: 24.5625rem;
+    width: 100vw;
     height: 15.9375rem;
     position: relative;
     top: 0;
     left: 0;
   }
   .conA .containerC {
-    width: 24.5625rem;
+    width: 100vw;
     height: 15.9375rem;
     position: relative;
     top: 0;
     left: 0;
   }
   .conA .containerD {
-    width: 24.5625rem;
+    width: 100vw;
     height: 15.9375rem;
     position: relative;
     top: 0;
     left: 0;
   }
   .conA img {
-    width: 24.5625rem;
+    width: 26.875rem;
     height: 15.9375rem;
     filter: brightness(50%);
   }
@@ -171,11 +175,11 @@
     display: flex;
     flex-direction: column;
     align-items: end;
-    gap: 5px;
+    gap: 0.3125rem;
     text-align: end;
     position: absolute;
     top: 6.875rem;
-    right: 3.125rem;
+    left: 47%;
     z-index: 100;
   }
   .conA .containerA .textbox h1 {
@@ -191,7 +195,7 @@
     text-align: start;
     position: absolute;
     top: 6.875rem;
-    left: 3.125rem;
+    left: 13%;
     z-index: 100;
   }
   .conA .containerB .textbox h1 {
@@ -207,7 +211,7 @@
     text-align: end;
     position: absolute;
     top: 6.875rem;
-    right: 3.125rem;
+    left: 47%;
     z-index: 100;
   }
   .conA .containerC .textbox h1 {
@@ -223,7 +227,7 @@
     text-align: start;
     position: absolute;
     top: 6.875rem;
-    left: 3.125rem;
+    left: 13%;
     z-index: 100;
   }
   .conA .containerD .textbox h1 {
@@ -283,7 +287,7 @@
   }
 }
 
-@media (min-width: 394px) {
+@media (min-width: 431px) {
   * {
     margin: 0;
     padding: 0;
@@ -473,7 +477,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 0;
   }
   .heroimage .sidebar ul a {
     color: var(--white);
