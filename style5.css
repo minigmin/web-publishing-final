@@ -33,6 +33,8 @@ body {
 header {
   height: 47.8125rem;
   margin-bottom: 7.5rem;
+  margin-left: auto;
+    margin-right: auto;
 }
 .title {
   display: flex;
