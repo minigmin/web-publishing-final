@@ -34,6 +34,8 @@
     width: 26.875rem;
     height: 21.5625rem;
     margin-bottom: 1.875rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   .title {
     display: flex;
