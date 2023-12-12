@@ -10,7 +10,7 @@
   --dark: #111111;
   --dark-overlay: rgba(17, 17, 17, 0.8);
 }
-@media (max-width: 393px) {
+@media (max-width: 430px) {
   * {
     margin: 0;
     padding: 0;
@@ -28,14 +28,17 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   header {
+    width: 26.875rem;
     height: 21.5625rem;
     margin-bottom: 1.875rem;
   }
   .title {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
   .headbar {
     width: 18.3125rem;
@@ -98,12 +101,15 @@
     background-color: var(--accent-color);
   }
   .heroimage {
-    width: 24.5625rem;
+    width: 26.875rem;
     height: 17.8125rem;
-    background-image: url(./이미지/메인배너\ 북촌스카이웨이.jpg);
+    background-image: url(./이미지/메인배너\ 서울불꽃축제.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    left: 0;
   }
   .heroimage h1 {
     font-size: 2.25rem;
@@ -115,15 +121,16 @@
     text-shadow: 0rem 0.25rem 0.25rem var(--dark);
   }
   .heroimage h1:nth-child(2) {
+    display: none;
+  }
+  .heroimage p {
     font-size: 0.9375rem;
     font-weight: 500;
     color: var(--white);
     text-align: center;
+    position: relative;
     top: 7.5625rem;
     text-shadow: 0rem 0.25rem 0.25rem var(--dark);
-  }
-  .heroimage p {
-    display: none;
   }
   .conA {
     margin-left: auto;
@@ -139,7 +146,7 @@
     justify-content: center;
     align-items: center;
     color: var(--black);
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.875rem;
   }
   .conA h2::before {
     content: "";
@@ -231,7 +238,7 @@
   .conC {
     display: none;
   }
- .footbar {
+  .footbar {
     background-color: var(--main-color);
     width: 24.5625rem;
     height: 3.75rem;
@@ -270,7 +277,7 @@
   }
 }
 
-@media (min-width: 394px) {
+@media (min-width: 431px) {
   * {
     margin: 0;
     padding: 0;
