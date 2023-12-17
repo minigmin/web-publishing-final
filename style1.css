@@ -106,7 +106,7 @@
     background-color: var(--accent-color);
   }
   .heroimage {
-    width: 100vw;
+    width: 100%;
     height: 17.8125rem;
     background-image: url(./이미지/메인페이지\ 메인이미지.jpg);
     background-position: center;
@@ -251,9 +251,11 @@
     display: none;
   }
    footer {
+    width: 26.875rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: auto;
   }
   .footbar {
     background-color: var(--main-color);
