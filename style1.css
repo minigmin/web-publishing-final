@@ -250,16 +250,9 @@
   .conA .textbox p {
     display: none;
   }
-   footer {
-    width: 26.875rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: auto;
-  }
-  .footbar {
+    .footbar {
     background-color: var(--main-color);
-    width: 24.5625rem;
+    width: 100%;
     height: 3.75rem;
     padding: 0.6563rem 3.2188rem;
     display: flex;
